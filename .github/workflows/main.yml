@@ -16,8 +16,8 @@ jobs:
         uses: actions/setup-java@v3.0.0
         with:
           java-version: 11
-          
-          cache: 'maven'
+          distribution: 'temurin'
+          cache: gradle
 
       - name: Build with Maven
         run: mvn clean install
